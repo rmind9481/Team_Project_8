@@ -1,0 +1,21 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 아이돌 얼굴 인식 서비스</title>
+</head>
+<body>
+    <h1>📷 아이돌 카리나를 찾아라! 테스트</h1>
+
+    <!-- 이미지 업로드 폼 -->
+    <form action="/cgi-bin/face_detect.py" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="submit" value="분석하기">
+    </form>
+
+    <hr>
+
+    <!-- 결과는 face_detect.py가 직접 HTML로 출력하므로 이곳은 빈 상태 -->
+</body>
+</html>
